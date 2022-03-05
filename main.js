@@ -17,9 +17,9 @@
 var x = +prompt('Введите число');
 var y = +prompt('Введите степень');
 var z = 1;
-var i = 0;
-for (;i < y;i++ ){ 
-       z = z * y;
+var i = 1;
+for (;i <= y;i++ ){ 
+       z = z * x;
 }
 console.log(z);
 
