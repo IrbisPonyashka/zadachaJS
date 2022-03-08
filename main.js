@@ -1,38 +1,11 @@
- 
-// первое задание через  while
 
-// var x = +prompt('Введите число');
-// var y = +prompt('Введите степень');
-// var z = 1;
-// var i = 0
-
-// while( i < y)
-// {
-//     z = y * x;
-//     i++;
-// }
-// console.log(z);
-
-// первое задание через For
-var x = +prompt('Введите число');
-var y = +prompt('Введите степень');
-var z = 1;
-var i = 1;
-for (;i <= y;i++ ){ 
-       z = z * x;
+function birth(Name,year,old) {
+    Name = prompt('Имя');
+    year = +prompt('Год рождения');
+    old = +prompt('Нынешний год');
+    let x = old - year;
+    alert('Ваше имя ' + Name + ', вы ' + year + ' года рождения ' + ' и вам ' + x + ' лет ')
 }
-console.log(z);
+birth()
 
-// второе задание
 
-var a = prompt("Введите количество ступенек")
-var b = prompt("Введите символы ступенек")
-var c = prompt("Введите конечный символ")
-
-for (let i = 0; i < a; i++) {
-    let line = ''
-    for(let j = 0; j < i; j++) {
-        line += b
-    }
-    console.log(line + '' + c);
-}
