@@ -1,12 +1,12 @@
 
-// function birth(Name,year,old) {
-//     Name = prompt('Введите ваше имя');
-//     year = +prompt('Введите ваш год рождения');
-//     old = +prompt('Введите нынешний год');
-//     let x = old - year;
-//     alert('Ваше имя ' + Name + ', вы ' + year + ' года рождения ' + ' и вам ' + x + ' лет ')
-// }
-// birth()primer = +prompt(number1 + ' / ' + number2 + ' =')
+function birth(Name,year,old) {
+    Name = prompt('Введите ваше имя');
+    year = +prompt('Введите ваш год рождения');
+    old = +prompt('Введите нынешний год');
+    let x = old - year;
+    alert('Ваше имя ' + Name + ', вы ' + year + ' года рождения ' + ' и вам ' + x + ' лет ')
+}
+birth()
 
 function rand(min,max) {
     return Math.floor(Math.random() * (max + 1 - min) + min);
