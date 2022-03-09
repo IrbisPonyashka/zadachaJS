@@ -31,13 +31,17 @@ for(i = 0; i < x;i++) {
          }else if( alert('Ваш ответ ' + primer + ' не верный. ' + ' Правильный ответ :' + (number1 + number2))); 
     }else if(number1 % 2 == 0){
         let primer = +prompt(number1 + ' / ' + number2 + ' =')
-        let answer = (number1 / number2) == primer ? 'верный' : 'Ошибка';
-        alert(number1 + ' / ' + number2 + ' = ' + (number1 / number2) + ' , ' + primer + ' Ваш ответ ' +   answer);
+        let answer = (number1 / number2);
+        if(answer = (number1 / number2) == primer){
+            alert('Ваш ответ верный : ' + primer);
+         }else if( alert('Ваш ответ ' + primer + ' не верный. ' + ' Правильный ответ :' + (number1 / number2)));
     }
     else if(number1 % 2){
         let primer = +prompt(number1 + ' * ' + number2 + ' =')
-        let answer = (number1 * number2) == primer ? 'верный' : 'Ошибка';
-        alert(number1 + ' * ' + number2 + ' = ' + (number1 * number2) + ' , ' + primer + ' Ваш ответ ' +  answer);
+        let answer = (number1 * number2);
+        if(answer = (number1 * number2) == primer){
+            alert('Ваш ответ верный : ' + primer);
+         }else if( alert('Ваш ответ ' + primer + ' не верный. ' + ' Правильный ответ :' + (number1 * number2)));
     }
 }
 // let primer = +prompt(number1 + ' + ' + number2 + ' =');
