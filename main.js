@@ -1,48 +1,63 @@
-
-function birth(Name,year,old) {
-    Name = prompt('Введите ваше имя');
-    year = +prompt('Введите ваш год рождения');
-    old = +prompt('Введите нынешний год');
-    let x = old - year;
-    alert('Ваше имя ' + Name + ', вы ' + year + ' года рождения ' + ' и вам ' + x + ' лет ')
-}
-birth()
-
-function rand(min,max) {
-    return Math.floor(Math.random() * (max + 1 - min) + min);
-}
-let x = +prompt('Введите кол-во примеров')
-let minNumber = +prompt('Введите минимальное число'); 
-let maxNumber = +prompt('Введите максимальное число'); 
-for(i = 0; i < x;i++) {
-    let number1 = rand(minNumber,maxNumber) 
-    let number2 = rand(minNumber,maxNumber) 
-    if(number1 > number2){
-        let primer = +prompt(number1 + ' - ' + number2 + ' =')
-        let answer = (number1 - number2);
-        if(answer = (number1 - number2) == primer){
-           alert('Ваш ответ верный : ' + primer);
-        }else if( alert('Ваш ответ ' + primer + ' не верный. ' + 'Правильный ответ :' + (number1 - number2))); 
-    }else if(number1 === 1){
-        let primer = +prompt(number1 + ' + ' + number2 + ' =')
-        let answer = (number1 + number2);
-        if(answer = (number1 + number2) == primer){
-            alert('Ваш ответ верный : ' + primer);
-         }else if( alert('Ваш ответ ' + primer + ' не верный. ' + ' Правильный ответ :' + (number1 + number2))); 
-    }else if(number1 % 2 == 0){
-        let primer = +prompt(number1 + ' / ' + number2 + ' =')
-        let answer = (number1 / number2);
-        if(answer = (number1 / number2) == primer){
-            alert('Ваш ответ верный : ' + primer);
-         }else if( alert('Ваш ответ ' + primer + ' не верный. ' + ' Правильный ответ :' + (number1 / number2)));
+// Первое задание
+let proga = {
+    1: {
+        user: 'Пользователь 1',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    2: {
+        user: 'Пользователь 2',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    3: {
+        user: 'Пользователь 3',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    4: {
+        user: 'Пользователь 4',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    5: {
+        user: 'Пользователь 5',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    6: {
+        user: 'Пользователь 6',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    7: {
+        user: 'Пользователь 7 ',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    8: {
+        user: 'Пользователь 8',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    9: {
+        user: 'Пользователь 9 ',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
+    },
+    10: {
+        user: 'Пользователь 10',
+        name: prompt('Введите имя', 'Name'),
+        age: +prompt('Введите ваш возраст', ' +18')
     }
-    else if(number1 % 2){
-        let primer = +prompt(number1 + ' * ' + number2 + ' =')
-        let answer = (number1 * number2);
-        if(answer = (number1 * number2) == primer){
-            alert('Ваш ответ верный : ' + primer);
-         }else if( alert('Ваш ответ ' + primer + ' не верный. ' + ' Правильный ответ :' + (number1 * number2)));
+}
+    for(let key in proga){ 
+        for(let newKey in proga[key]){    
+        console.log((proga[key][newKey]));  
     }
 }
-// let primer = +prompt(number1 + ' + ' + number2 + ' =');
-//     let answer = (number1 + number2) == primer ? 'Молодец' : 'Ошибка';
+
+
+
+
+
